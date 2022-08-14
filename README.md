@@ -61,9 +61,10 @@ This plugin autocompletes the option of `elm` app. Just use tabs.
 
 ### Autocompletion of packages
 
-To autocompletion for packages to work, you have to get the list of package names. 
+This funcion ***needs [`jq`](https://stedolan.github.io/jq/) to be installed***
 
-There is a function in this plugin for it: `elm-completion-update`. This funcion ***needs `jq` to be installed***
+To autocompletion for packages to work, you have to get the list of package names. 
+There is a function in this plugin for it: `elm-completion-update`. 
 
 ```shell
 # Get fresh pacckages names from package.elm-lang.org
