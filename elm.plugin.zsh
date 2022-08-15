@@ -115,6 +115,6 @@ compdef _elm_completion 'elm'
 # This function updates local list of available packages
 
 elm-completion-update(){
-    curl --compressed https://package.elm-lang.org/search.json | jq -r '.[].name' > $ELM_PACKAGES_LIST
+    curl --compressed https://package.elm-lang.org/search.json | grep -o '\"name\":\"\([A-Za-z\/\-]*\)\"' | sed -e 's/\"//g; s/\(name\:\)//' > $ELM_PACKAGES_LIST
 }
 

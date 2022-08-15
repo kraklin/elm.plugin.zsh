@@ -61,8 +61,6 @@ This plugin autocompletes the option of `elm` app. Just use tabs.
 
 ### Autocompletion of packages
 
-This funcion ***needs [`jq`](https://stedolan.github.io/jq/) to be installed***
-
 To autocompletion for packages to work, you have to get the list of package names. 
 There is a function in this plugin for it: `elm-completion-update`. 
 
@@ -70,6 +68,8 @@ There is a function in this plugin for it: `elm-completion-update`.
 # Get fresh pacckages names from package.elm-lang.org
 elm-completion-update
 ```
+
+Now you should be able to run autocompletion for `elm install` and `elm diff` packages
 
 ## License
 [MIT](LICENCE)
